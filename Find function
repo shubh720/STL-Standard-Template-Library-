@@ -1,0 +1,21 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main(){
+ 
+ int a[] = {1,2,3,4,5,6};
+ int n = sizeof(a)/sizeof(int);
+ 
+ int key;
+ cin>>key;
+ auto it = find(a,a+n,key);   // will return address of key ,if present 
+ int index = it - a;
+
+  if(index==n){
+     cout<<"NOT FOUND!";
+  }else{
+    cout<<"Found at index : "<<index; 
+  }
+  return 0;
+}
