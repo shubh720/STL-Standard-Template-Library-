@@ -1,1 +1,32 @@
 
+#include <iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
+int main() {
+
+  // let's us take rotation of an array
+  int arr[] = {10,20,30,40,50,60,70};
+  int n = sizeof(arr)/sizeof(int);
+  
+  // rotate an array from index valued 40
+  rotate(arr,arr+3,arr+n);
+   
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
+ // rotation using vector 
+  vector<int> v{10,20,30,40,50,60,70};
+  
+ // rotate vector
+  rotate(v.begin(),v.begin()+2,v.end());
+  cout<<endl;
+
+    for(auto i:v){
+        cout<<i<<" ";
+    }  
+
+
+}
