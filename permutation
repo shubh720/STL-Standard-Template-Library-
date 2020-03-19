@@ -1,0 +1,28 @@
+#include <iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
+int main() { 
+
+  // permutation of number of series
+  vector<int> v{1,2,3};
+  
+  // syntax : next_permutation(arr/vector start,arr/vector end)
+  // here permutation goes like : 123 132 213 231 312 321
+   next_permutation(v.begin(),v.end());
+    
+     for(auto i:v){
+         cout<< i <<" ";
+     }
+  
+   next_permutation(v.begin(),v.end());
+   next_permutation(v.begin(),v.end());
+   cout<<endl;
+
+    for(auto i:v){
+         cout<< i <<" ";
+     }
+   
+
+}
